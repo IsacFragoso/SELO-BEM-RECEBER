@@ -11,104 +11,225 @@ function addYears(iso, years=2){
 }
 
 export const EMPRESAS = [
+  // Araçatuba
   {
-    nome: 'Pousada Sol do Tietê',
-    cnpj: '12.345.678/0001-99',
+    nome: 'Botânico Hotel Fazenda',
+    cnpj: 'PENDENTE',
     cidade: 'Araçatuba',
     chancela: 'Hospedagem',
-    data_selo: '2024-05-10',
-    validade: addYears('2024-05-10'),
-    endereco: 'R. das Flores, 100 - Araçatuba, SP',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Araçatuba, SP (Hotel Fazenda)',
     site: ''
   },
+  // Andradina
   {
-    nome: 'Restaurante Sabores da Serra',
-    cnpj: '98.765.432/0001-11',
-    cidade: 'Birigui',
-    chancela: 'Gastronomia',
-    data_selo: '2023-04-20',
-    validade: addYears('2023-04-20'),
-    endereco: 'Av. Central, 500 - Birigui, SP',
-    site: ''
-  },
-  {
-    nome: 'Tietê Adventure Park',
-    cnpj: '45.678.901/0001-22',
-    cidade: 'Penápolis',
-    chancela: 'Atrativo Turístico',
-    data_selo: '2022-04-15',
-    validade: addYears('2022-04-15'),
-    endereco: 'Estrada Municipal km 12 - Penápolis, SP',
-    site: 'https://exemplo.com/park'
-  },
-  {
-    nome: 'Operadora Roteiros do Noroeste',
-    cnpj: '23.456.789/0001-55',
-    cidade: 'Guararapes',
-    chancela: 'Agência/Operadora',
-    data_selo: '2025-05-12',
-    validade: addYears('2025-05-12'),
-    endereco: '',
-    site: ''
-  },
-  {
-    nome: 'Barco do Rio Tietê',
-    cnpj: '33.222.111/0001-77',
-    cidade: 'Buritama',
-    chancela: 'Transporte Turístico',
-    data_selo: '2024-04-22',
-    validade: addYears('2024-04-22'),
-    endereco: 'Marina Municipal - Buritama, SP',
-    site: ''
-  },
-  {
-    nome: 'Hotel Fazenda Boa Vista',
-    cnpj: '55.444.333/0001-88',
-    cidade: 'Araçatuba',
-    chancela: 'Hospedagem',
-    data_selo: '2023-05-05',
-    validade: addYears('2023-05-05'),
-    endereco: '',
-    site: ''
-  },
-  {
-    nome: 'Café & Prosa Bistrô',
-    cnpj: '11.222.333/0001-44',
+    nome: 'Hotel Vitória',
+    cnpj: 'PENDENTE',
     cidade: 'Andradina',
-    chancela: 'Gastronomia',
-    data_selo: '2025-05-02',
-    validade: addYears('2025-05-02'),
-    endereco: 'Rua do Comércio, 42 - Andradina, SP',
-    site: 'https://exemplo.com/cafeprosa'
-  },
-  {
-    nome: 'Museu Histórico do Vale',
-    cnpj: '10.000.000/0001-00',
-    cidade: 'Valparaíso',
-    chancela: 'Atrativo Turístico',
-    data_selo: '2024-04-18',
-    validade: addYears('2024-04-18'),
-    endereco: 'Praça Central, s/n - Valparaíso, SP',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Av. Barão do Rio Branco, Andradina - SP',
     site: ''
   },
+  // Andradina
   {
-    nome: 'Trilhas & Passeios Noroeste',
-    cnpj: '66.777.888/0001-99',
-    cidade: 'Lavínia',
-    chancela: 'Agência/Operadora',
-    data_selo: '2022-04-25',
-    validade: addYears('2022-04-25'),
-    endereco: '',
+    nome: 'Guanabara Palace Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
     site: ''
   },
+  // Andradina
   {
-    nome: 'Vans Tur Araçatuba',
-    cnpj: '22.111.000/0001-66',
-    cidade: 'Araçatuba',
-    chancela: 'Transporte Turístico',
-    data_selo: '2025-05-22',
-    validade: addYears('2025-05-22'),
-    endereco: 'Rodoviária - Araçatuba, SP',
+    nome: 'Hotel Casa Grande',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Rua Barão do Rio Branco, Andradina - SP',
     site: ''
-  }
+  },
+  // Andradina
+  {
+    nome: 'Hotel Ibis Andradina',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
+    site: ''
+  },
+  // Andradina
+  {
+    nome: 'Hotel Roda D’Água',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
+    site: ''
+  },
+  // Andradina
+  {
+    nome: 'Sarau Palace Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
+    site: ''
+  },
+  // Andradina
+  {
+    nome: 'Savana Park Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
+    site: ''
+  },
+  // Andradina
+  {
+    nome: 'Wakanda Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
+    site: ''
+  },
+  // Andradina
+  {
+    nome: 'Oeste Plaza Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
+    site: ''
+  },
+  // Andradina
+  {
+    nome: 'Ondara Flat Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Andradina',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Andradina, SP',
+    site: ''
+  },
+  // Birigui
+  {
+    nome: 'ibis Styles Birigui',
+    cnpj: 'PENDENTE',
+    cidade: 'Birigui',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Birigui, SP',
+    site: ''
+  },
+  // Birigui
+  {
+    nome: 'Hotel Birigui Palace',
+    cnpj: 'PENDENTE',
+    cidade: 'Birigui',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Birigui, SP',
+    site: ''
+  },
+  // Birigui
+  {
+    nome: 'Big Plaza Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Birigui',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Birigui, SP',
+    site: ''
+  },
+  // Birigui
+  {
+    nome: 'Pérola Verde Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Birigui',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Birigui, SP',
+    site: ''
+  },
+  // Penápolis
+  {
+    nome: 'Sakr Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Penápolis',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Penápolis, SP',
+    site: ''
+  },
+  // Penápolis
+  {
+    nome: 'Bigs Hotel (Penápolis)',
+    cnpj: 'PENDENTE',
+    cidade: 'Penápolis',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Penápolis, SP',
+    site: ''
+  },
+  // Penápolis
+  {
+    nome: 'Grande Hotel Penápolis',
+    cnpj: 'PENDENTE',
+    cidade: 'Penápolis',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Penápolis, SP',
+    site: ''
+  },
+  // Guararapes
+  {
+    nome: 'Villa Cedros Hotel',
+    cnpj: 'PENDENTE',
+    cidade: 'Guararapes',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Guararapes, SP',
+    site: ''
+  },
+  // Guararapes
+  {
+    nome: 'Hotel Guararapes (local)',
+    cnpj: 'PENDENTE',
+    cidade: 'Guararapes',
+    chancela: 'Hospedagem',
+    data_selo: '2025-09-09',
+    validade: '2027-09-09',
+    endereco: 'Guararapes, SP',
+    site: ''
+  },
 ];
+
