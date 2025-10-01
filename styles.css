@@ -102,6 +102,31 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 .company-meta{ color: var(--muted); font-size:.9rem; display:flex; gap:1rem; flex-wrap:wrap; }
 .company-actions{ display:flex; gap:.5rem; margin-top:.25rem; }
 
+
+/* ====== Sobre (background customizado) ====== */
+.sobre-bg {
+  position: relative;
+  background: url("assets/birigui.png") no-repeat center center;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.sobre-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: inherit;
+}
+
+.sobre-bg > * {
+  position: relative;
+}
+
+
 /* ====== Verify ====== */
 .verify-form{ display:flex; gap:.5rem; flex-wrap:wrap; }
 .verify-form input{ flex:1; min-width: 260px; }
