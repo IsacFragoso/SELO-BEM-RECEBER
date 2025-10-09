@@ -123,7 +123,7 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 /* ====== Sobre (background customizado) ====== */
 .sobre-bg {
   position: relative;
-  background: url("assets/birigui.png") no-repeat center center;
+  background: url("assets/banner_certo.png") no-repeat center center;
   background-size: cover;
   padding: 2rem;
   border-radius: 1rem;
