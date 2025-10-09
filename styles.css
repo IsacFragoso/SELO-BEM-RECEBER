@@ -48,10 +48,27 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 
 /* ====== Hero ====== */
 .hero{
-  background: linear-gradient(135deg, #eff6ff, #e0f2fe);
-  border-bottom:1px solid #e5e7eb;
+  position: relative;
+  background: url("assets/banner.png") no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid #e5e7eb;
+  color: #fff; /* deixa o texto visível sobre a imagem */
 }
-.hero-inner{ display:flex; align-items:center; min-height: 320px; }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* camada escura por cima da foto */
+  z-index: 1;
+}
+
+.hero-inner{ 
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 320px;
+  z-index: 2;
+}
 .hero-copy{ max-width: 700px; }
 .hero-cta{ display:flex; gap:.75rem; margin-top: 1rem; }
 
