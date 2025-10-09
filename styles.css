@@ -52,13 +52,11 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
   background: url("assets/banner_certo.png") no-repeat center center;
   background-size: cover;
   border-bottom: 1px solid #e5e7eb;
-  color: #fff; /* deixa o texto visível sobre a imagem */
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35); /* camada escura por cima da foto */
   z-index: 1;
 }
 
@@ -123,7 +121,7 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 /* ====== Sobre (background customizado) ====== */
 .sobre-bg {
   position: relative;
-  background: url("assets/banner_certo.png") no-repeat center center;
+  background: url("assets/.png") no-repeat center center;
   background-size: cover;
   padding: 2rem;
   border-radius: 1rem;
