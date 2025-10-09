@@ -47,21 +47,28 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 .menu-toggle{ display:none; }
 
 /* ====== Hero ====== */
-.hero{
+.hero {
   position: relative;
   background: url("assets/banner_certo.png") no-repeat center center;
   background-size: cover;
   border-bottom: 1px solid #e5e7eb;
+  color: #fff; /* opcional, se quiser o texto branco */
+}
 
-.hero-inner{ 
+.hero::before {
+  content: none;
+}
+
+.hero-inner { 
   position: relative;
   display: flex;
   align-items: center;
   min-height: 320px;
   z-index: 2;
 }
-.hero-copy{ max-width: 700px; }
-.hero-cta{ display:flex; gap:.75rem; margin-top: 1rem; }
+.hero-copy { max-width: 700px; }
+.hero-cta { display: flex; gap: .75rem; margin-top: 1rem; }
+
 
 /* ====== Buttons ====== */
 .btn{
