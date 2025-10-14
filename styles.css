@@ -112,23 +112,24 @@ nav ul li a:hover::after {
   }
 }
 
-/* ======== MENU COLORIDO ======== */
+/* ======== MENU AZUL CLARO ======== */
 nav {
-  background: linear-gradient(to right, #2563eb, #1d4ed8); /* Gradiente azul */
+  background: linear-gradient(to right, #60a5fa, #3b82f6); /* azul claro suave */
   padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease-in-out;
+  border-bottom: 2px solid #bfdbfe; /* linha decorativa */
 }
 
-/* Efeito quando o usuário rolar a página */
+/* Efeito quando o usuário rola a página */
 nav.scrolled {
-  background: linear-gradient(to right, #1d4ed8, #1e40af);
+  background: linear-gradient(to right, #3b82f6, #2563eb); /* tom um pouco mais escuro */
 }
 
-/* Centralizar e estilizar o menu */
+/* Centralização do menu */
 nav ul {
   display: flex;
   justify-content: center;
@@ -138,7 +139,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 18px;
 }
 
 nav ul li a {
@@ -147,19 +148,19 @@ nav ul li a {
   font-size: 17px;
   font-weight: 500;
   color: #ffffff;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-/* Efeito hover: muda o fundo e destaca o texto */
+/* Efeito hover suave */
 nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.25);
   color: #e0f2fe;
   transform: scale(1.05);
 }
 
-/* Linha animada embaixo do item */
+/* Linha animada sob o item */
 nav ul li a::after {
   content: "";
   position: absolute;
@@ -175,7 +176,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* Ajuste para telas menores */
+/* Responsivo */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
