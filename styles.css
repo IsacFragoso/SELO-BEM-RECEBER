@@ -2,24 +2,23 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #4f8efc 0%, #bbebf5 100%);
+  background: #ffffff;
 }
 
-/* Cada seção com fundo diferente */
-section:nth-child(odd) {
+/* Degradê aplicado APENAS nas seções depois do banner */
+section:not(#banner):nth-of-type(odd) {
   background: linear-gradient(180deg, #e6f3ff 0%, #cfe8ff 100%);
 }
 
-section:nth-child(even) {
+section:not(#banner):nth-of-type(even) {
   background: linear-gradient(180deg, #bbebf5 0%, #91caff 100%);
 }
 
-/* Ajusta o espaçamento interno para deixar mais bonito */
+/* Ajustes visuais */
 section {
   padding: 60px 0;
 }
 
-/* Ajusta o texto pra não ficar colado nas bordas */
 section h2, section p {
   margin-left: 10%;
   margin-right: 10%;
