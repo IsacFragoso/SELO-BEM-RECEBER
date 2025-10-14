@@ -47,135 +47,53 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 .main-nav a:hover{ outline:2px solid var(--ring); outline-offset:2px; }
 .menu-toggle{ display:none; }
 
-/* ======== MENU INTERATIVO COM FUNDO BRANCO ======== */
-/* ======== MENU AZUL CLARO ======== */
+/* ===== MENU PRINCIPAL ===== */
 nav {
-  background: linear-gradient(to right, #60a5fa, #3b82f6); /* azul claro suave */
-  padding: 15px 0;
+  background: linear-gradient(to right, #93c5fd, #60a5fa); /* azul suave */
+  padding: 10px 25px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease-in-out;
-  border-bottom: 2px solid #bfdbfe; /* linha decorativa */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content; /* deixa o menu menor, só do tamanho dos itens */
+  margin: 15px 30px 0 auto; /* posiciona à direita da página */
+  transition: all 0.3s ease-in-out;
 }
 
-/* Efeito quando o usuário rola a página */
-nav.scrolled {
-  background: linear-gradient(to right, #3b82f6, #2563eb); /* tom um pouco mais escuro */
-}
-
-/* Centralização do menu */
+/* ===== LINKS DO MENU ===== */
 nav ul {
-  display: flex;
-  justify-content: center;
   list-style: none;
+  display: flex;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
-  margin: 0 18px;
-}
-
 nav ul li a {
-  position: relative;
+  color: #0f172a; /* azul bem escuro para contraste */
   text-decoration: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #ffffff;
-  padding: 8px 14px;
-  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
-/* Efeito hover suave */
+/* ===== EFEITO HOVER ===== */
 nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-  color: #e0f2fe;
-  transform: scale(1.05);
+  background: #2563eb; /* azul médio */
+  color: white;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
 }
 
-/* Linha animada sob o item */
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background-color: #ffffff;
-  transition: width 0.3s ease;
+/* ===== ITEM ATIVO (opcional) ===== */
+nav ul li a.active {
+  background: #3b82f6;
+  color: white;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
 }
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-
-/* Centralização do menu */
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 18px;
-}
-
-nav ul li a {
-  position: relative;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #0a0a0a;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-/* Efeito hover suave */
-nav ul li a:hover {
-  background-color: rgba(37, 99, 235, 0.1); /* leve toque de azul translúcido */
-  color: #2563eb;
-  transform: scale(1.05);
-}
-
-/* Linha animada sob o item */
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background-color: #2563eb;
-  transition: width 0.3s ease;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
 
 
 
