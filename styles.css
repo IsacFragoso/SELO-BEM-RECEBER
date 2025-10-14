@@ -15,25 +15,6 @@ html, body { margin: 0; padding: 0; }
   --danger:#b91c1c;
 }
 
-/* Degradê aplicado APENAS nas seções depois do banner */
-section:not(#banner):nth-of-type(odd) {
-  background: linear-gradient(180deg, #e6f3ff 0%, #cfe8ff 100%);
-}
-
-section:not(#banner):nth-of-type(even) {
-  background: linear-gradient(180deg, #bbebf5 0%, #91caff 100%);
-}
-
-/* Ajustes visuais */
-section {
-  padding: 60px 0;
-}
-
-section h2, section p {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 body{
   font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
   color: var(--text);
