@@ -158,25 +158,43 @@ footer {
   text-align: center;
 }
 
-.redes-sociais {
-  margin-bottom: 15px;
+.social-links {
+  list-style: none;
+  padding: 0;
 }
 
-.redes-sociais a {
+.social-links li {
+  margin: 10px 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #004aad;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077ff;
+}
+
+.social-links img {
+  width: 25px;  /* tamanho do ícone */
+  height: 25px;
+  border-radius: 6px; /* opcional, arredonda um pouco */
+}
+.contato {
+  text-align: center;
+}
+
+.social-links {
   display: inline-block;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
+  text-align: left;
 }
 
-.redes-sociais a:hover {
-  transform: scale(1.2);
-}
-
-.redes-sociais img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
 
 /* ====== Utilities ====== */
