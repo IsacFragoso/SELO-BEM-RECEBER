@@ -47,21 +47,15 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 .menu-toggle{ display:none; }
 
 /* ---- SEÇÃO DE CONTATO ---- */
+
 #contato {
-  padding: 40px 0;
-  background-color: #f7faff;
+  text-align: center;
 }
 
-#contato h2 {
-  color: #003366;
-  margin-bottom: 10px;
+.social-links {
+  display: inline-block;
+  text-align: left;
 }
-
-#contato p {
-  margin-bottom: 20px;
-  color: #333;
-}
-
 
 /* ---- LINKS DAS REDES SOCIAIS ---- */
 .social-links {
