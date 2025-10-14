@@ -48,14 +48,54 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 .menu-toggle{ display:none; }
 
 /* === MENU PRINCIPAL === */
+/* ===== MENU PRINCIPAL ===== */
 nav {
-  background-color: #ffffff;
-  padding: 15px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #93c5fd, #60a5fa); /* azul suave */
+  padding: 10px 25px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content; /* deixa o menu menor, só do tamanho dos itens */
+  margin: 15px 30px 0 auto; /* posiciona à direita da página */
+  transition: all 0.3s ease-in-out;
 }
+
+/* ===== LINKS DO MENU ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #0f172a; /* azul bem escuro para contraste */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ===== EFEITO HOVER ===== */
+nav ul li a:hover {
+  background: #2563eb; /* azul médio */
+  color: white;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ===== ITEM ATIVO (opcional) ===== */
+nav ul li a.active {
+  background: #3b82f6;
+  color: white;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
 
 /* Centraliza os itens do menu */
 nav ul {
