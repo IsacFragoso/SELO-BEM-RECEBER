@@ -16,7 +16,7 @@ html, body { margin: 0; padding: 0; }
 }
 
 body{
-  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  font: 14px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
   color: var(--text);
   background: #f8fafc;
 }
@@ -48,7 +48,6 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 .menu-toggle{ display:none; }
 
 /* === MENU PRINCIPAL === */
-/* ===== MENU PRINCIPAL ===== */
 nav {
   background: linear-gradient(to right, #93c5fd, #60a5fa); /* azul suave */
   padding: 10px 25px;
