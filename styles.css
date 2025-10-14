@@ -49,19 +49,13 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 
 /* === MENU PRINCIPAL === */
 nav {
-  background: linear-gradient(to right, #60a5fa, #3b82f6); /* azul claro */
+  background-color: #ffffff;
   padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease-in-out;
-  border-bottom: 2px solid #bfdbfe; /* linha decorativa */
-  border-radius: 15px; /* <-- aqui arredonda as bordas do menu */
-  margin: 10px auto; /* opcional: deixa o menu centralizado com espaço nas laterais */
-  max-width: 1200px; /* opcional: limita a largura para ficar bonito */
 }
-
 
 /* Centraliza os itens do menu */
 nav ul {
@@ -89,7 +83,7 @@ nav ul li a {
 
 /* Efeito de cor no hover */
 nav ul li a:hover {
-  color: #81c9fa;
+  color: #def7ff;
 }
 
 /* === LINHA ANIMADA AO PASSAR O MOUSE === */
