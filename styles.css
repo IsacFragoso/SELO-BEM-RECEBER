@@ -62,14 +62,6 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
   color: #333;
 }
 
-#contato {
-  text-align: center;
-}
-
-.social-links {
-  display: inline-block;
-  text-align: left;
-}
 
 /* ---- LINKS DAS REDES SOCIAIS ---- */
 .social-links {
@@ -104,6 +96,15 @@ ul{ margin: .25rem 0 1rem 1.25rem; }
 
 .social-links a:hover img {
   transform: scale(1.1);
+}
+
+#contato {
+  text-align: center;
+}
+
+.social-links {
+  display: inline-block;
+  text-align: left;
 }
 
 /* ====== Hero ====== */
