@@ -112,6 +112,77 @@ nav ul li a:hover::after {
   }
 }
 
+/* ======== MENU COLORIDO ======== */
+nav {
+  background: linear-gradient(to right, #2563eb, #1d4ed8); /* Gradiente azul */
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+/* Efeito quando o usuário rolar a página */
+nav.scrolled {
+  background: linear-gradient(to right, #1d4ed8, #1e40af);
+}
+
+/* Centralizar e estilizar o menu */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Efeito hover: muda o fundo e destaca o texto */
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #e0f2fe;
+  transform: scale(1.05);
+}
+
+/* Linha animada embaixo do item */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 
 /* ---- SEÇÃO DE CONTATO ---- */
 
