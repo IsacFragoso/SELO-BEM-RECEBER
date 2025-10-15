@@ -15,20 +15,32 @@ html, body { margin: 0; padding: 0; }
   --danger:#b91c1c;
 }
 
-body{
-  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
-  color: var(--text);
-  background: #f8fafc;
+/* Fundo geral da página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
 }
-.nowrap{ white-space: nowrap; }
-.container{ max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
-.section{ padding: 3rem 0; }
-.section.alt{ background: #f1f5f9; }
-.section-header{ margin-bottom: 1rem; }
-h1,h2,h3{ line-height: 1.2; margin: 0 0 .75rem; }
-p{ margin: .5rem 0 1rem; }
-ul{ margin: .25rem 0 1rem 1.25rem; }
-.muted{ color: var(--muted); }
+
+/* Degradê aplicado APENAS nas seções depois do banner */
+section:not(#banner):nth-of-type(odd) {
+  background: linear-gradient(180deg, #e6f3ff 0%, #cfe8ff 100%);
+}
+
+section:not(#banner):nth-of-type(even) {
+  background: linear-gradient(180deg, #bbebf5 0%, #91caff 100%);
+}
+
+/* Ajustes visuais */
+section {
+  padding: 60px 0;
+}
+
+section h2, section p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 
 /* ====== Header ====== */
 .site-header{
