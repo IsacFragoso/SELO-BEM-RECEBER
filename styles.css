@@ -1,19 +1,4 @@
 /* ====== Reset e bases ====== */
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-:root{
-  --bg: #0f172a;
-  --bg-alt: #111827;
-  --card: #ffffff;
-  --text: #0f172a;
-  --muted: #6b7280;
-  --primary: #2563eb;
-  --primary-600:#1d4ed8;
-  --ring: rgba(37,99,235,.3);
-  --success:#059669;
-  --warn:#b45309;
-  --danger:#b91c1c;
-}
 
 /* Fundo geral da página */
 body {
