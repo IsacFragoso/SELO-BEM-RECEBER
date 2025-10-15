@@ -208,11 +208,17 @@ nav ul li a:hover::after {
 .btn.ghost:hover{ background:#f9fafb; }
 
 /* ====== Cards & grids ====== */
-.card{
+.sobre{
   background: var(--card);
   border:1px solid #e5e7eb;
   border-radius: 1rem; box-shadow: 0 6px 24px rgba(2,6,23,.05);
   padding: 1rem;
+}
+.card{
+  background: var(--card);
+  border:1px solid #e5e7eb;
+  border-radius: 1rem; box-shadow: 0 6px 24px rgba(2,6,23,.05);
+  padding: 4.2rem;
 }
 .card.note h3{ margin-bottom:.5rem; }
 .grid{ display:grid; gap: 1rem; }
@@ -243,28 +249,88 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 .company-actions{ display:flex; gap:.5rem; margin-top:.25rem; }
 
 
-/* ====== Sobre (background customizado) ====== */
-.sobre-bg {
-  position: relative;
-  background: url("assets/.png") no-repeat center center;
-  background-size: cover;
-  padding: 2rem;
-  border-radius: 1rem;
-  color: #fff;
-  overflow: hidden;
+/* ====== GRID PADRÃO (duas colunas de mesmo tamanho) ====== */
+.grid.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* duas colunas iguais */
+  gap: 2rem;
+  align-items: stretch; /* força mesma altura dos blocos */
 }
 
-/* Overlay para contraste */
-.sobre-bg::before {
+/* ====== BLOCO PADRÃO COM FUNDO BRANCO TRANSLÚCIDO ====== */
+/* Aplica o mesmo estilo-base às duas seções */
+.sobre-bg,
+.card-note {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: black;
+  overflow: hidden;
+  min-height: 100%; /* mesma altura dentro da grid */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Camada branca translúcida sobre a imagem (atrás do texto) */
+.sobre-bg::before,
+.card-note::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3); /* escurece a imagem em 50% */
+  background: rgba(255, 255, 255, 0); /* véu branco */
+  border-radius: inherit;
+  z-index: 0; /* fica atrás do texto */
+
+}
+
+/* Texto acima do véu branco */
+.sobre-bg > *,
+.card-note > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+/* ====== Fundos específicos ====== */
+.sobre-bg {
+  background-image: url("assets/birigui.png");
+}
+
+.card-note {
+  background-image: url("assets/office.png");
+}
+
+
+
+
+/* ====== card-note (background customizado) ====== */
+.card-note {
+  position: relative  ;
+  background: url("assets/office.png") no-repeat center center;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2rem;
+  color:black;
+  overflow: hidden;
+  
+}
+
+.card-note::before {
+  content: "";
+  position: absolute ;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.048);
   border-radius: inherit;
 }
 
-.sobre-bg > * {
-  position: relative; /* mantém o texto acima do overlay */
+.card-note > * {
+  position: relative;
 }
 
 
