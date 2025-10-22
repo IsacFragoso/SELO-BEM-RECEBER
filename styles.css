@@ -15,11 +15,14 @@ html, body { margin: 0; padding: 0; }
 }
 
 
-body{
-  font: 16px/Roboto;
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
   color: var(--text);
   background: #f8fafc;
 }
+
 
 .nowrap{ white-space: nowrap; }
 .container{ max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
