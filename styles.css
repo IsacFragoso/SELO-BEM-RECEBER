@@ -16,7 +16,7 @@ html, body { margin: 0; padding: 0; }
 
 
 body{
-  font: 16px/Segoe UI;
+  font: 16px/Roboto;
   color: var(--text);
   background: #f8fafc;
 }
