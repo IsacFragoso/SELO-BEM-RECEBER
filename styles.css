@@ -14,14 +14,14 @@ html, body { margin: 0; padding: 0; }
   --danger:#b91c1c;
 }
 
-
 body {
   font-size: 16px;
   line-height: 1.6;
-  font-family: Arial;
+  font-family: Arial, sans-serif !important;
   color: var(--text);
   background: #f8fafc;
 }
+
 
 
 
