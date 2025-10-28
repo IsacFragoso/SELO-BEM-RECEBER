@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
@@ -37,17 +37,15 @@
   </header>
 
   <main id="conteudo">
-    <section class="hero">
-      <div class="container hero-inner">
-        <img src="assets/banner.png" alt="Banner" />
-        
-        
-        <div class="hero-copy">
-         
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="hero">
+  <picture>
+    <!-- imagem para telas pequenas -->
+    <source media="(max-width: 768px)" srcset="assets/banner_certo_mobile.png">
+    <!-- imagem padrão para telas maiores -->
+    <img src="assets/banner_certo.png" alt="Banner" class="hero-banner">
+  </picture>
+</div>
+
 
     <section id="sobre" class="section">
       <div class="container">
