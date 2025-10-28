@@ -175,7 +175,7 @@ nav ul li a:hover::after {
 
 .hero {
   position: relative;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
 }
 
