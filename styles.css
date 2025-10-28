@@ -179,9 +179,6 @@ nav ul li a:hover::after {
 
  .hero {
   position: relative;
-  background: url("assets/banner_certo.png") no-repeat center center;
-  background-size: cover;
-  background-attachment: scroll; /* evita bugs no celular */
   width: 100%;
   min-height: 60vh; /* altura proporcional à tela */
   display: flex;
@@ -195,15 +192,13 @@ nav ul li a:hover::after {
   content: none;
 }
 
-.hero-inner { 
-  width: 100%;
-  padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: inherit;
+.hero-inner img {
+  width: 100%;      /* ocupa toda a largura do container */
+  height: auto;     /* mantém a proporção */
+  display: block;   /* remove espaçamento extra de linha */
+  max-width: 1100px; /* opcional, se quiser limitar a largura máxima */
 }
+
 .hero-copy { max-width: 700px; }
 .hero-cta { display: flex; gap: .75rem; margin-top: 1rem; }
 
