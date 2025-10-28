@@ -21,10 +21,6 @@ body {
   color: var(--text);
   background: #f8fafc;
 }
-
-
-
-
 .nowrap{ white-space: nowrap; }
 .container{ max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
 .section{ padding: 3rem 0; }
@@ -177,26 +173,25 @@ nav ul li a:hover::after {
 
 /* ====== Hero ====== */
 
- .hero {
+.hero {
   position: relative;
   width: 100%;
-  min-height: 60vh; /* altura proporcional à tela */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  overflow: hidden;
+}
+
+.hero img.hero-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
-}
-
-.hero::before {
-  content: none;
-}
-
-.hero-inner img {
-  width: 100%;      /* ocupa toda a largura do container */
-  height: auto;     /* mantém a proporção */
-  display: block;   /* remove espaçamento extra de linha */
-  max-width: 1100px; /* opcional, se quiser limitar a largura máxima */
+  padding: 0 1rem;
 }
 
 .hero-copy { max-width: 700px; }
