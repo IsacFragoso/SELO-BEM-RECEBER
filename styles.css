@@ -176,21 +176,21 @@ nav ul li a:hover::after {
 .hero {
   position: relative;
   width: 100%;
-  height: 60vh; /* ocupa 60% da altura da tela, ajustável */
+  height: 100vh; /* altura da tela inteira */
   overflow: hidden;
 }
 
 .hero img.hero-banner {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* mantém a imagem proporcional e cobre toda a área */
+  object-fit: cover; /* cobre toda a área sem distorcer */
   display: block;
 }
 
 .hero-inner {
   position: absolute;
-  top: 50%; /* centraliza verticalmente */
-  left: 50%; /* centraliza horizontalmente */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
