@@ -172,15 +172,18 @@ nav ul li a:hover::after {
 }
 
 /* ====== Hero ====== */
+/* ====== Hero ====== */
 .hero {
   position: relative;
   width: 100%;
+  max-height: 500px; /* altura máxima do banner */
   overflow: hidden;
 }
 
 .hero img.hero-banner {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* garante que a imagem preencha o espaço sem deformar */
   display: block;
 }
 
@@ -193,7 +196,6 @@ nav ul li a:hover::after {
   text-align: center;
   padding: 0 1rem;
 }
-
 .hero-copy { max-width: 700px; }
 .hero-cta { display: flex; gap: .75rem; margin-top: 1rem; }
 
