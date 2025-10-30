@@ -340,6 +340,92 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 }
 
 
+/* --- Área geral do carrossel --- */
+.carousel {
+  width: 100%;
+  padding: 40px 0;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+/* --- Estilo dos cards --- */
+.card {
+  position: relative;
+  width: 250px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* --- Imagem --- */
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* --- Título abaixo da imagem --- */
+.card h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+/* --- Overlay com texto --- */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.overlay p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* --- Mostrar texto ao passar o mouse --- */
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* --- Rolagem suave e ocultar barra --- */
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+
 /* ====== Verify ====== */
 .verify-form{ display:flex; gap:.5rem; flex-wrap:wrap; }
 .verify-form input{ flex:1; min-width: 260px; }
