@@ -358,7 +358,7 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 }
 
 /* --- Estilo dos cards --- */
-.card {
+.cardi {
   position: relative;
   width: 250px;
   flex-shrink: 0;
@@ -370,19 +370,19 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.card:hover {
+.cardi:hover {
   transform: scale(1.05);
 }
 
 /* --- Imagem --- */
-.card img {
+.cardi img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
 /* --- Título abaixo da imagem --- */
-.card h3 {
+.cardi h3 {
   position: absolute;
   bottom: 10px;
   left: 15px;
@@ -416,7 +416,7 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 }
 
 /* --- Mostrar texto ao passar o mouse --- */
-.card:hover .overlay {
+.cardi:hover .overlay {
   opacity: 1;
 }
 
