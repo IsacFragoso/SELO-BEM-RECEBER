@@ -476,8 +476,12 @@ footer p {
 
 
 /* ====== Utilities ====== */
-
-.checklist li::before{ content: "✓"; margin-right:.5rem; color: var(--success); list-style: none;}
+.checklist {
+  list-style: none;       /* remove as bolinhas da lista */
+  padding: 0;             /* tira o recuo padrão */
+  margin: 0;
+}
+.checklist li::before{ content: "✓"; margin-right:.5rem; color: var(--success);}
 
 .skip-link{
   position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;
