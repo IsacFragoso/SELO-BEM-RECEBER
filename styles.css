@@ -478,8 +478,6 @@ footer p {
 /* ====== Utilities ====== */
 .checklist {
   list-style: none !important;       
-  margin: 0 18px;
-
 }
 .checklist li::before{ content: "✓"; margin-right:.5rem; color: var(--success);}
 
