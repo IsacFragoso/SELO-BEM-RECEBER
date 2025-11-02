@@ -476,7 +476,7 @@ footer p {
 
 
 /* ====== Utilities ====== */
-.checklist{ list-style: none; padding-left:0; }
+
 .checklist li::before{ content: "✓"; margin-right:.5rem; color: var(--success); list-style: none;}
 
 .skip-link{
@@ -518,7 +518,6 @@ footer p {
   .hero img.banner-desktop {
     display: none;
   }
-
   .hero img.banner-mobile {
     display: block;
   }
