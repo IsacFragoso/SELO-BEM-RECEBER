@@ -477,8 +477,8 @@ footer p {
 
 /* ====== Utilities ====== */
 .checklist {
-  list-style: none;       /* remove as bolinhas da lista */
-  padding: 0;             /* tira o recuo padrão */
+  list-style: none;       
+  padding: 0;            
   margin: 0;
 }
 .checklist li::before{ content: "✓"; margin-right:.5rem; color: var(--success);}
