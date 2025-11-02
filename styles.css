@@ -537,7 +537,7 @@ footer p {
       text-align: center;
       padding: 60px 20px 40px;
       background: #b1d4ec;
-      color: #000000;
+      color: #1f1e1e;
       font-size: 1.8rem;
       font-weight: bold;
     }
@@ -550,7 +550,7 @@ footer p {
       flex-wrap: wrap;
       gap: 30px;
       padding: 40px 10%;
-      
+
     }
 
   .bloco-azul { 
