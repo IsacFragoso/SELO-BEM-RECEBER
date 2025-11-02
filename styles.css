@@ -477,7 +477,7 @@ footer p {
 
 /* ====== Utilities ====== */
 .checklist{ list-style: none; padding-left:0; }
-.checklist li::before{ content: "✓"; margin-right:.5rem; color: var(--success); }
+.checklist li::before{ content: "✓"; margin-right:.5rem; color: var(--success); list-style: none;}
 
 .skip-link{
   position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;
