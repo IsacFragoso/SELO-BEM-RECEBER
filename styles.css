@@ -553,6 +553,13 @@ footer p {
       background-color: antiquewhite;
     }
 
+  .bloco-azul {
+    background-color: #e0f2fe; /* azul clarinho */
+    border-radius: 12px;
+    padding: 60px 10%;
+  }
+
+
     .bloco .texto-bloco {
       flex: 1;
       min-width: 250px;
