@@ -227,7 +227,7 @@ nav ul li a:hover::after {
   padding: 1rem;
 }
 .container h2{
-  text-align: justify;
+  text-align: justify !important;
 }
 .card{
   border-radius: 1rem; box-shadow: 0 6px 24px rgba(2,6,23,.05);
