@@ -224,7 +224,6 @@ nav ul li a:hover::after {
 /* ====== Cards & grids ====== */
 .sobre{
   background: var(--card);
-  border:1px solid #e5e7eb;
   border-radius: 1rem; box-shadow: 0 6px 24px rgba(2,6,23,.05);
   padding: 1rem;
 }
@@ -349,7 +348,6 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
 .carousel {
   width: 100%;
   padding: 40px 0;
-  background: #f5f7fb;
   display: flex;
   justify-content: center;
 }
