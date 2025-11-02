@@ -484,60 +484,6 @@ footer p {
 }
 .skip-link:focus{ position:static; width:auto; height:auto; padding:.4rem .6rem; background:#fff; border:1px solid #e5e7eb; border-radius:.4rem; }
 
-/* ====== SEÇÃO SOBRE O PROGRAMA ====== */
-#sobre h2 {
-  text-align: center !important;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: var(--text);
-}
-
-/* Estrutura lado a lado */
-.sobre-linha {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
-}
-
-/* Texto alinhado à esquerda */
-.sobre-linha .texto {
-  flex: 1;
-  text-align: justify;
-}
-
-/* Imagem ao lado direito/esquerdo */
-.sobre-linha .imagem {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.sobre-linha .imagem img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-  object-fit: cover;
-}
-
-/* Responsivo */
-@media (max-width: 900px) {
-  .sobre-linha {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .sobre-linha .texto {
-    text-align: left;
-  }
-
-  .sobre-linha .imagem img {
-    max-width: 100%;
-  }
-}
 
 /* Responsividade geral */
 @media (max-width: 900px) {
