@@ -388,7 +388,7 @@ input:focus, select:focus{ border-color: var(--primary); box-shadow: 0 0 0 4px v
   position: absolute;
   bottom: 10px;
   left: 15px;
-  color: black;
+  color: gray;
   font-size: 1.2rem;
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0,0,0,0.7);
