@@ -454,7 +454,13 @@ footer {
   font-size: 32px;
   margin: 0 10px;
   transition: transform 0.3s, color 0.3s;
+  text-decoration: none; /* ← adiciona esta linha */
 }
+
+.social-icons a:hover {
+  text-decoration: none;
+}
+
 
 /* Cores dos ícones */
 .social-icons a:nth-child(1) { color: #E1306C; }   /* Instagram */
