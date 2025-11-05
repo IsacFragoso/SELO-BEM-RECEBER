@@ -16,23 +16,7 @@
 </script>
 
  <!-- PERGUNTAS - FAQ -->
- <script>
-  const faqItems = document.querySelectorAll(".faq-item");
 
-  faqItems.forEach(item => {
-    const btn = item.querySelector(".faq-question");
-
-    btn.addEventListener("click", () => {
-      const isActive = item.classList.contains("active");
-
-      // Fecha todos os outros
-      faqItems.forEach(i => i.classList.remove("active"));
-
-      // Abre o clicado se não estava aberto
-      if (!isActive) item.classList.add("active");
-    });
-  });
-</script>
 
 <body>
 
@@ -327,7 +311,27 @@
     nav.classList.toggle("scrolled", window.scrollY > 50);
   });
 </script>
-   
+
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      const btn = item.querySelector(".faq-question");
+
+      btn.addEventListener("click", () => {
+        const isActive = item.classList.contains("active");
+
+        // Fecha todos os outros
+        faqItems.forEach(i => i.classList.remove("active"));
+
+        // Abre o clicado se não estava aberto
+        if (!isActive) item.classList.add("active");
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
 
